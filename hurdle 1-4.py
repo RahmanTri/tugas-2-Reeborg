@@ -107,4 +107,11 @@ while at_goal()==False:
         turn_right()
         # karakter akan bergerak jika didepan kosong
         if front_is_clear()==True:
-            move()    
+            move()
+
+# pembuatan beberapa fungsi
+# membuat fungsi belok kanan
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
