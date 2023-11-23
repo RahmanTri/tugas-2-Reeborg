@@ -115,3 +115,8 @@ def turn_right():
     turn_left()
     turn_left()
     turn_left()
+   
+# eksekusi game
+while not at_goal(): # ketika karakter belum finish, maka program akan melakukan perulangan
+    if right_is_clear(): # ketika sisi kanan karakter kosong, maka karakter akan belok kanan dan maju 1 langkah
+        turn_right()
