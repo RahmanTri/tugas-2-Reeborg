@@ -120,3 +120,8 @@ def turn_right():
 while not at_goal(): # ketika karakter belum finish, maka program akan melakukan perulangan
     if right_is_clear(): # ketika sisi kanan karakter kosong, maka karakter akan belok kanan dan maju 1 langkah
         turn_right()
+        move()
+    elif front_is_clear(): # jika didepan karakter kosong, maka karakter akan maju 1 langkah
+        move()
+    else: # jika tidak memenuhi 2 kondisi di atas, karakter akan belok kiri
+        turn_left()
